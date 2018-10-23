@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Hermes_Modbus_3
 {
-    public partial class Form1 : Form
+    public partial class Settings : Form
     {
-        public Form1()
+        public Settings()
         {
             InitializeComponent();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void ShiftChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
