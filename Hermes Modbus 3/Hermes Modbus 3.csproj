@@ -33,11 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HermesButton">
-      <HintPath>..\..\..\Hermes Controls\Hermes Button\HermesButton\HermesButton\bin\Debug\HermesButton.dll</HintPath>
+    <Reference Include="CircularProgressBar, Version=2.6.6823.24527, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.6.6823.24527\lib\net35-client\CircularProgressBar.dll</HintPath>
     </Reference>
-    <Reference Include="HermesTabs">
-      <HintPath>..\..\..\Hermes Controls\HermesTabs\HermesTabs\bin\Debug\HermesTabs.dll</HintPath>
+    <Reference Include="EasyModbus">
+      <HintPath>..\..\..\Hermes Modbus\EasyModbus.dll</HintPath>
+    </Reference>
+    <Reference Include="HermesToolBox">
+      <HintPath>..\..\..\Hermes Controls\HermesToolBox\HermesToolBox\bin\Debug\HermesToolBox.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -50,8 +53,18 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.5.6298.3372, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.5.6298.3372\lib\net35-client\WinFormAnimation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Machine.cs" />
+    <Compile Include="MachinePanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinePanel.Designer.cs">
+      <DependentUpon>MachinePanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +79,9 @@
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MachinePanel.resx">
+      <DependentUpon>MachinePanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -81,6 +97,7 @@
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

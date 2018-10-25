@@ -31,24 +31,24 @@
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.hermesTabs1 = new HermesTabs.HermesTabs();
+            this.hermesTabs1 = new HermesToolBox.HermesTabs();
             this.tabMain = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.readingFreq = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ipAddress = new System.Windows.Forms.TextBox();
             this.tabBackup = new System.Windows.Forms.TabPage();
             this.tabSchedule = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.redLimit = new System.Windows.Forms.TextBox();
+            this.yellowLimit = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.greenLimit = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label8 = new System.Windows.Forms.Label();
@@ -75,69 +75,74 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker11 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker12 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker13 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker14 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker15 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker16 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker17 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker18 = new System.Windows.Forms.DateTimePicker();
+            this.machineName1 = new System.Windows.Forms.TextBox();
+            this.machineName2 = new System.Windows.Forms.TextBox();
+            this.machineName3 = new System.Windows.Forms.TextBox();
+            this.machineName4 = new System.Windows.Forms.TextBox();
+            this.machineName5 = new System.Windows.Forms.TextBox();
+            this.machineName6 = new System.Windows.Forms.TextBox();
+            this.machineName7 = new System.Windows.Forms.TextBox();
+            this.machineName8 = new System.Windows.Forms.TextBox();
+            this.machineName9 = new System.Windows.Forms.TextBox();
+            this.shiftStart1 = new System.Windows.Forms.DateTimePicker();
+            this.shiftStart2 = new System.Windows.Forms.DateTimePicker();
+            this.shiftStart3 = new System.Windows.Forms.DateTimePicker();
+            this.shiftStart4 = new System.Windows.Forms.DateTimePicker();
+            this.shiftStart5 = new System.Windows.Forms.DateTimePicker();
+            this.shiftStart6 = new System.Windows.Forms.DateTimePicker();
+            this.shiftStart7 = new System.Windows.Forms.DateTimePicker();
+            this.shiftStart8 = new System.Windows.Forms.DateTimePicker();
+            this.shiftStart9 = new System.Windows.Forms.DateTimePicker();
+            this.shiftEnd1 = new System.Windows.Forms.DateTimePicker();
+            this.shiftEnd2 = new System.Windows.Forms.DateTimePicker();
+            this.shiftEnd3 = new System.Windows.Forms.DateTimePicker();
+            this.shiftEnd4 = new System.Windows.Forms.DateTimePicker();
+            this.shiftEnd5 = new System.Windows.Forms.DateTimePicker();
+            this.shiftEnd6 = new System.Windows.Forms.DateTimePicker();
+            this.shiftEnd7 = new System.Windows.Forms.DateTimePicker();
+            this.shiftEnd8 = new System.Windows.Forms.DateTimePicker();
+            this.shiftEnd9 = new System.Windows.Forms.DateTimePicker();
+            this.lblShiftSpan1 = new System.Windows.Forms.Label();
+            this.lblShiftSpan2 = new System.Windows.Forms.Label();
+            this.lblShiftSpan3 = new System.Windows.Forms.Label();
+            this.lblShiftSpan4 = new System.Windows.Forms.Label();
+            this.lblShiftSpan5 = new System.Windows.Forms.Label();
+            this.lblShiftSpan6 = new System.Windows.Forms.Label();
+            this.lblShiftSpan7 = new System.Windows.Forms.Label();
+            this.lblShiftSpan8 = new System.Windows.Forms.Label();
+            this.lblShiftSpan9 = new System.Windows.Forms.Label();
+            this.dayTarget6 = new System.Windows.Forms.TextBox();
+            this.dayTarget3 = new System.Windows.Forms.TextBox();
+            this.dayTarget8 = new System.Windows.Forms.TextBox();
+            this.dayTarget5 = new System.Windows.Forms.TextBox();
+            this.dayTarget2 = new System.Windows.Forms.TextBox();
+            this.dayTarget1 = new System.Windows.Forms.TextBox();
+            this.dayTarget7 = new System.Windows.Forms.TextBox();
+            this.dayTarget4 = new System.Windows.Forms.TextBox();
+            this.plannedDowntime1 = new System.Windows.Forms.TextBox();
+            this.machineIP1 = new System.Windows.Forms.TextBox();
+            this.plannedDowntime2 = new System.Windows.Forms.TextBox();
+            this.machineIP2 = new System.Windows.Forms.TextBox();
+            this.plannedDowntime3 = new System.Windows.Forms.TextBox();
+            this.machineIP3 = new System.Windows.Forms.TextBox();
+            this.plannedDowntime4 = new System.Windows.Forms.TextBox();
+            this.machineIP4 = new System.Windows.Forms.TextBox();
+            this.plannedDowntime5 = new System.Windows.Forms.TextBox();
+            this.machineIP5 = new System.Windows.Forms.TextBox();
+            this.plannedDowntime6 = new System.Windows.Forms.TextBox();
+            this.machineIP6 = new System.Windows.Forms.TextBox();
+            this.plannedDowntime7 = new System.Windows.Forms.TextBox();
+            this.machineIP7 = new System.Windows.Forms.TextBox();
+            this.plannedDowntime8 = new System.Windows.Forms.TextBox();
+            this.machineIP8 = new System.Windows.Forms.TextBox();
+            this.dayTarget9 = new System.Windows.Forms.TextBox();
+            this.plannedDowntime9 = new System.Windows.Forms.TextBox();
+            this.machineIP9 = new System.Windows.Forms.TextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.machineNumeric = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
             this.pnlHeader.SuspendLayout();
             this.pnlMain.SuspendLayout();
             this.hermesTabs1.SuspendLayout();
@@ -152,6 +157,7 @@
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.machineNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -180,11 +186,13 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.SlateGray;
+            this.pnlMain.Controls.Add(this.btnSave);
+            this.pnlMain.Controls.Add(this.btnCancel);
             this.pnlMain.Controls.Add(this.hermesTabs1);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlMain.Location = new System.Drawing.Point(0, 66);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1582, 687);
+            this.pnlMain.Size = new System.Drawing.Size(1582, 834);
             this.pnlMain.TabIndex = 1;
             // 
             // hermesTabs1
@@ -197,12 +205,12 @@
             this.hermesTabs1.Controls.Add(this.tabSchedule);
             this.hermesTabs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hermesTabs1.ItemSize = new System.Drawing.Size(250, 40);
-            this.hermesTabs1.Location = new System.Drawing.Point(12, 3);
+            this.hermesTabs1.Location = new System.Drawing.Point(12, 74);
             this.hermesTabs1.myBackColor = System.Drawing.Color.SlateGray;
             this.hermesTabs1.Name = "hermesTabs1";
             this.hermesTabs1.Padding = new System.Drawing.Point(90, 10);
             this.hermesTabs1.SelectedIndex = 0;
-            this.hermesTabs1.Size = new System.Drawing.Size(1558, 622);
+            this.hermesTabs1.Size = new System.Drawing.Size(1558, 698);
             this.hermesTabs1.TabIndex = 0;
             // 
             // tabMain
@@ -213,7 +221,7 @@
             this.tabMain.Location = new System.Drawing.Point(4, 44);
             this.tabMain.Name = "tabMain";
             this.tabMain.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMain.Size = new System.Drawing.Size(1550, 633);
+            this.tabMain.Size = new System.Drawing.Size(1550, 650);
             this.tabMain.TabIndex = 0;
             this.tabMain.Text = "Main";
             // 
@@ -222,9 +230,9 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.readingFreq, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ipAddress, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(72, 99);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -234,13 +242,13 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(694, 100);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // textBox2
+            // readingFreq
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(369, 54);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(322, 41);
-            this.textBox2.TabIndex = 3;
+            this.readingFreq.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.readingFreq.Location = new System.Drawing.Point(369, 54);
+            this.readingFreq.Name = "readingFreq";
+            this.readingFreq.Size = new System.Drawing.Size(322, 41);
+            this.readingFreq.TabIndex = 3;
             // 
             // label1
             // 
@@ -260,13 +268,13 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Reading Frequency (ms)";
             // 
-            // textBox1
+            // ipAddress
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(369, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(322, 41);
-            this.textBox1.TabIndex = 2;
+            this.ipAddress.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ipAddress.Location = new System.Drawing.Point(369, 4);
+            this.ipAddress.Name = "ipAddress";
+            this.ipAddress.Size = new System.Drawing.Size(322, 41);
+            this.ipAddress.TabIndex = 2;
             // 
             // tabBackup
             // 
@@ -274,17 +282,20 @@
             this.tabBackup.Location = new System.Drawing.Point(4, 44);
             this.tabBackup.Name = "tabBackup";
             this.tabBackup.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBackup.Size = new System.Drawing.Size(1550, 633);
+            this.tabBackup.Size = new System.Drawing.Size(1550, 650);
             this.tabBackup.TabIndex = 1;
             this.tabBackup.Text = "Backup";
             this.tabBackup.UseVisualStyleBackColor = true;
             // 
             // tabSchedule
             // 
+            this.tabSchedule.Controls.Add(this.label25);
+            this.tabSchedule.Controls.Add(this.label26);
+            this.tabSchedule.Controls.Add(this.machineNumeric);
             this.tabSchedule.Controls.Add(this.tableLayoutPanel5);
             this.tabSchedule.Location = new System.Drawing.Point(4, 44);
             this.tabSchedule.Name = "tabSchedule";
-            this.tabSchedule.Size = new System.Drawing.Size(1550, 574);
+            this.tabSchedule.Size = new System.Drawing.Size(1550, 650);
             this.tabSchedule.TabIndex = 2;
             this.tabSchedule.Text = "Schedule";
             // 
@@ -295,12 +306,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.Controls.Add(this.pictureBox4, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.textBox6, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.greenLimit, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.label4, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.textBox4, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textBox3, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.yellowLimit, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.redLimit, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(1035, 207);
@@ -330,21 +341,21 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Yellow Limit";
             // 
-            // textBox3
+            // redLimit
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(191, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 41);
-            this.textBox3.TabIndex = 3;
+            this.redLimit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.redLimit.Location = new System.Drawing.Point(191, 4);
+            this.redLimit.Name = "redLimit";
+            this.redLimit.Size = new System.Drawing.Size(121, 41);
+            this.redLimit.TabIndex = 3;
             // 
-            // textBox4
+            // yellowLimit
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(191, 58);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 41);
-            this.textBox4.TabIndex = 3;
+            this.yellowLimit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.yellowLimit.Location = new System.Drawing.Point(191, 58);
+            this.yellowLimit.Name = "yellowLimit";
+            this.yellowLimit.Size = new System.Drawing.Size(121, 41);
+            this.yellowLimit.TabIndex = 3;
             // 
             // pictureBox1
             // 
@@ -377,13 +388,13 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Green Limit";
             // 
-            // textBox6
+            // greenLimit
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Location = new System.Drawing.Point(191, 114);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(121, 41);
-            this.textBox6.TabIndex = 7;
+            this.greenLimit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.greenLimit.Location = new System.Drawing.Point(191, 114);
+            this.greenLimit.Name = "greenLimit";
+            this.greenLimit.Size = new System.Drawing.Size(121, 41);
+            this.greenLimit.TabIndex = 7;
             // 
             // pictureBox4
             // 
@@ -489,6 +500,7 @@
             this.btnExamine.TabIndex = 24;
             this.btnExamine.Text = "Examine";
             this.btnExamine.UseVisualStyleBackColor = false;
+            this.btnExamine.Click += new System.EventHandler(this.btnExamine_Click);
             // 
             // tableLayoutPanel5
             // 
@@ -503,33 +515,33 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel5.Controls.Add(this.textBox42, 7, 9);
-            this.tableLayoutPanel5.Controls.Add(this.textBox33, 7, 5);
-            this.tableLayoutPanel5.Controls.Add(this.textBox34, 6, 6);
-            this.tableLayoutPanel5.Controls.Add(this.textBox35, 7, 6);
-            this.tableLayoutPanel5.Controls.Add(this.textBox36, 6, 7);
-            this.tableLayoutPanel5.Controls.Add(this.textBox37, 7, 7);
-            this.tableLayoutPanel5.Controls.Add(this.textBox38, 6, 8);
-            this.tableLayoutPanel5.Controls.Add(this.textBox39, 7, 8);
-            this.tableLayoutPanel5.Controls.Add(this.textBox40, 5, 9);
-            this.tableLayoutPanel5.Controls.Add(this.textBox41, 6, 9);
-            this.tableLayoutPanel5.Controls.Add(this.textBox24, 6, 1);
-            this.tableLayoutPanel5.Controls.Add(this.textBox25, 7, 1);
-            this.tableLayoutPanel5.Controls.Add(this.textBox26, 6, 2);
-            this.tableLayoutPanel5.Controls.Add(this.textBox27, 7, 2);
-            this.tableLayoutPanel5.Controls.Add(this.textBox28, 6, 3);
-            this.tableLayoutPanel5.Controls.Add(this.textBox29, 7, 3);
-            this.tableLayoutPanel5.Controls.Add(this.textBox30, 6, 4);
-            this.tableLayoutPanel5.Controls.Add(this.textBox31, 7, 4);
-            this.tableLayoutPanel5.Controls.Add(this.textBox32, 6, 5);
-            this.tableLayoutPanel5.Controls.Add(this.textBox14, 1, 9);
-            this.tableLayoutPanel5.Controls.Add(this.textBox16, 5, 3);
-            this.tableLayoutPanel5.Controls.Add(this.textBox13, 1, 8);
-            this.tableLayoutPanel5.Controls.Add(this.textBox12, 1, 7);
-            this.tableLayoutPanel5.Controls.Add(this.textBox10, 1, 5);
-            this.tableLayoutPanel5.Controls.Add(this.textBox19, 5, 2);
-            this.tableLayoutPanel5.Controls.Add(this.textBox7, 1, 2);
-            this.tableLayoutPanel5.Controls.Add(this.textBox20, 5, 1);
+            this.tableLayoutPanel5.Controls.Add(this.machineIP9, 7, 9);
+            this.tableLayoutPanel5.Controls.Add(this.machineIP5, 7, 5);
+            this.tableLayoutPanel5.Controls.Add(this.plannedDowntime6, 6, 6);
+            this.tableLayoutPanel5.Controls.Add(this.machineIP6, 7, 6);
+            this.tableLayoutPanel5.Controls.Add(this.plannedDowntime7, 6, 7);
+            this.tableLayoutPanel5.Controls.Add(this.machineIP7, 7, 7);
+            this.tableLayoutPanel5.Controls.Add(this.plannedDowntime8, 6, 8);
+            this.tableLayoutPanel5.Controls.Add(this.machineIP8, 7, 8);
+            this.tableLayoutPanel5.Controls.Add(this.dayTarget9, 5, 9);
+            this.tableLayoutPanel5.Controls.Add(this.plannedDowntime9, 6, 9);
+            this.tableLayoutPanel5.Controls.Add(this.plannedDowntime1, 6, 1);
+            this.tableLayoutPanel5.Controls.Add(this.machineIP1, 7, 1);
+            this.tableLayoutPanel5.Controls.Add(this.plannedDowntime2, 6, 2);
+            this.tableLayoutPanel5.Controls.Add(this.machineIP2, 7, 2);
+            this.tableLayoutPanel5.Controls.Add(this.plannedDowntime3, 6, 3);
+            this.tableLayoutPanel5.Controls.Add(this.machineIP3, 7, 3);
+            this.tableLayoutPanel5.Controls.Add(this.plannedDowntime4, 6, 4);
+            this.tableLayoutPanel5.Controls.Add(this.machineIP4, 7, 4);
+            this.tableLayoutPanel5.Controls.Add(this.plannedDowntime5, 6, 5);
+            this.tableLayoutPanel5.Controls.Add(this.machineName9, 1, 9);
+            this.tableLayoutPanel5.Controls.Add(this.dayTarget3, 5, 3);
+            this.tableLayoutPanel5.Controls.Add(this.machineName8, 1, 8);
+            this.tableLayoutPanel5.Controls.Add(this.machineName7, 1, 7);
+            this.tableLayoutPanel5.Controls.Add(this.machineName5, 1, 5);
+            this.tableLayoutPanel5.Controls.Add(this.dayTarget2, 5, 2);
+            this.tableLayoutPanel5.Controls.Add(this.machineName2, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.dayTarget1, 5, 1);
             this.tableLayoutPanel5.Controls.Add(this.label6, 0, 2);
             this.tableLayoutPanel5.Controls.Add(this.label17, 7, 0);
             this.tableLayoutPanel5.Controls.Add(this.label16, 6, 0);
@@ -546,43 +558,43 @@
             this.tableLayoutPanel5.Controls.Add(this.label22, 0, 7);
             this.tableLayoutPanel5.Controls.Add(this.label23, 0, 8);
             this.tableLayoutPanel5.Controls.Add(this.label24, 0, 9);
-            this.tableLayoutPanel5.Controls.Add(this.textBox5, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.textBox8, 1, 3);
-            this.tableLayoutPanel5.Controls.Add(this.textBox9, 1, 4);
-            this.tableLayoutPanel5.Controls.Add(this.textBox11, 1, 6);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker1, 2, 1);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker2, 2, 2);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker3, 2, 3);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker4, 2, 4);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker5, 2, 5);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker6, 2, 6);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker7, 2, 7);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker8, 2, 8);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker9, 2, 9);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker10, 3, 1);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker11, 3, 2);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker12, 3, 3);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker13, 3, 4);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker14, 3, 5);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker15, 3, 6);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker16, 3, 7);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker17, 3, 8);
-            this.tableLayoutPanel5.Controls.Add(this.dateTimePicker18, 3, 9);
-            this.tableLayoutPanel5.Controls.Add(this.label25, 4, 1);
-            this.tableLayoutPanel5.Controls.Add(this.label26, 4, 2);
-            this.tableLayoutPanel5.Controls.Add(this.label27, 4, 3);
-            this.tableLayoutPanel5.Controls.Add(this.label28, 4, 4);
-            this.tableLayoutPanel5.Controls.Add(this.label29, 4, 5);
-            this.tableLayoutPanel5.Controls.Add(this.label30, 4, 6);
-            this.tableLayoutPanel5.Controls.Add(this.label31, 4, 7);
-            this.tableLayoutPanel5.Controls.Add(this.label32, 4, 8);
-            this.tableLayoutPanel5.Controls.Add(this.label33, 4, 9);
-            this.tableLayoutPanel5.Controls.Add(this.textBox22, 5, 4);
-            this.tableLayoutPanel5.Controls.Add(this.textBox18, 5, 5);
-            this.tableLayoutPanel5.Controls.Add(this.textBox15, 5, 6);
-            this.tableLayoutPanel5.Controls.Add(this.textBox21, 5, 7);
-            this.tableLayoutPanel5.Controls.Add(this.textBox17, 5, 8);
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(82, 45);
+            this.tableLayoutPanel5.Controls.Add(this.machineName1, 1, 1);
+            this.tableLayoutPanel5.Controls.Add(this.machineName3, 1, 3);
+            this.tableLayoutPanel5.Controls.Add(this.machineName4, 1, 4);
+            this.tableLayoutPanel5.Controls.Add(this.machineName6, 1, 6);
+            this.tableLayoutPanel5.Controls.Add(this.shiftStart1, 2, 1);
+            this.tableLayoutPanel5.Controls.Add(this.shiftStart2, 2, 2);
+            this.tableLayoutPanel5.Controls.Add(this.shiftStart3, 2, 3);
+            this.tableLayoutPanel5.Controls.Add(this.shiftStart4, 2, 4);
+            this.tableLayoutPanel5.Controls.Add(this.shiftStart5, 2, 5);
+            this.tableLayoutPanel5.Controls.Add(this.shiftStart6, 2, 6);
+            this.tableLayoutPanel5.Controls.Add(this.shiftStart7, 2, 7);
+            this.tableLayoutPanel5.Controls.Add(this.shiftStart8, 2, 8);
+            this.tableLayoutPanel5.Controls.Add(this.shiftStart9, 2, 9);
+            this.tableLayoutPanel5.Controls.Add(this.shiftEnd1, 3, 1);
+            this.tableLayoutPanel5.Controls.Add(this.shiftEnd2, 3, 2);
+            this.tableLayoutPanel5.Controls.Add(this.shiftEnd3, 3, 3);
+            this.tableLayoutPanel5.Controls.Add(this.shiftEnd4, 3, 4);
+            this.tableLayoutPanel5.Controls.Add(this.shiftEnd5, 3, 5);
+            this.tableLayoutPanel5.Controls.Add(this.shiftEnd6, 3, 6);
+            this.tableLayoutPanel5.Controls.Add(this.shiftEnd7, 3, 7);
+            this.tableLayoutPanel5.Controls.Add(this.shiftEnd8, 3, 8);
+            this.tableLayoutPanel5.Controls.Add(this.shiftEnd9, 3, 9);
+            this.tableLayoutPanel5.Controls.Add(this.lblShiftSpan1, 4, 1);
+            this.tableLayoutPanel5.Controls.Add(this.lblShiftSpan2, 4, 2);
+            this.tableLayoutPanel5.Controls.Add(this.lblShiftSpan3, 4, 3);
+            this.tableLayoutPanel5.Controls.Add(this.lblShiftSpan4, 4, 4);
+            this.tableLayoutPanel5.Controls.Add(this.lblShiftSpan5, 4, 5);
+            this.tableLayoutPanel5.Controls.Add(this.lblShiftSpan6, 4, 6);
+            this.tableLayoutPanel5.Controls.Add(this.lblShiftSpan7, 4, 7);
+            this.tableLayoutPanel5.Controls.Add(this.lblShiftSpan8, 4, 8);
+            this.tableLayoutPanel5.Controls.Add(this.lblShiftSpan9, 4, 9);
+            this.tableLayoutPanel5.Controls.Add(this.dayTarget4, 5, 4);
+            this.tableLayoutPanel5.Controls.Add(this.dayTarget5, 5, 5);
+            this.tableLayoutPanel5.Controls.Add(this.dayTarget6, 5, 6);
+            this.tableLayoutPanel5.Controls.Add(this.dayTarget7, 5, 7);
+            this.tableLayoutPanel5.Controls.Add(this.dayTarget8, 5, 8);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(33, 101);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 10;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -797,584 +809,650 @@
             this.label24.TabIndex = 88;
             this.label24.Text = "9.";
             // 
-            // textBox5
+            // machineName1
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Location = new System.Drawing.Point(49, 82);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(303, 41);
-            this.textBox5.TabIndex = 89;
+            this.machineName1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineName1.Location = new System.Drawing.Point(49, 82);
+            this.machineName1.Name = "machineName1";
+            this.machineName1.Size = new System.Drawing.Size(303, 41);
+            this.machineName1.TabIndex = 89;
             // 
-            // textBox7
+            // machineName2
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Location = new System.Drawing.Point(49, 136);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(303, 41);
-            this.textBox7.TabIndex = 90;
+            this.machineName2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineName2.Location = new System.Drawing.Point(49, 136);
+            this.machineName2.Name = "machineName2";
+            this.machineName2.Size = new System.Drawing.Size(303, 41);
+            this.machineName2.TabIndex = 90;
             // 
-            // textBox8
+            // machineName3
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.Location = new System.Drawing.Point(49, 183);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(303, 41);
-            this.textBox8.TabIndex = 91;
+            this.machineName3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineName3.Location = new System.Drawing.Point(49, 183);
+            this.machineName3.Name = "machineName3";
+            this.machineName3.Size = new System.Drawing.Size(303, 41);
+            this.machineName3.TabIndex = 91;
             // 
-            // textBox9
+            // machineName4
             // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox9.Location = new System.Drawing.Point(49, 230);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(303, 41);
-            this.textBox9.TabIndex = 92;
+            this.machineName4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineName4.Location = new System.Drawing.Point(49, 230);
+            this.machineName4.Name = "machineName4";
+            this.machineName4.Size = new System.Drawing.Size(303, 41);
+            this.machineName4.TabIndex = 92;
             // 
-            // textBox10
+            // machineName5
             // 
-            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox10.Location = new System.Drawing.Point(49, 277);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(303, 41);
-            this.textBox10.TabIndex = 90;
+            this.machineName5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineName5.Location = new System.Drawing.Point(49, 277);
+            this.machineName5.Name = "machineName5";
+            this.machineName5.Size = new System.Drawing.Size(303, 41);
+            this.machineName5.TabIndex = 90;
             // 
-            // textBox11
+            // machineName6
             // 
-            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox11.Location = new System.Drawing.Point(49, 324);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(303, 41);
-            this.textBox11.TabIndex = 93;
+            this.machineName6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineName6.Location = new System.Drawing.Point(49, 324);
+            this.machineName6.Name = "machineName6";
+            this.machineName6.Size = new System.Drawing.Size(303, 41);
+            this.machineName6.TabIndex = 93;
             // 
-            // textBox12
+            // machineName7
             // 
-            this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox12.Location = new System.Drawing.Point(49, 371);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(303, 41);
-            this.textBox12.TabIndex = 90;
+            this.machineName7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineName7.Location = new System.Drawing.Point(49, 371);
+            this.machineName7.Name = "machineName7";
+            this.machineName7.Size = new System.Drawing.Size(303, 41);
+            this.machineName7.TabIndex = 90;
             // 
-            // textBox13
+            // machineName8
             // 
-            this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox13.Location = new System.Drawing.Point(49, 418);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(303, 41);
-            this.textBox13.TabIndex = 90;
+            this.machineName8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineName8.Location = new System.Drawing.Point(49, 418);
+            this.machineName8.Name = "machineName8";
+            this.machineName8.Size = new System.Drawing.Size(303, 41);
+            this.machineName8.TabIndex = 90;
             // 
-            // textBox14
+            // machineName9
             // 
-            this.textBox14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox14.Location = new System.Drawing.Point(49, 465);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(303, 41);
-            this.textBox14.TabIndex = 90;
+            this.machineName9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineName9.Location = new System.Drawing.Point(49, 465);
+            this.machineName9.Name = "machineName9";
+            this.machineName9.Size = new System.Drawing.Size(303, 41);
+            this.machineName9.TabIndex = 90;
             // 
-            // dateTimePicker1
+            // shiftStart1
             // 
-            this.dateTimePicker1.CustomFormat = "H:mm";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(358, 75);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowUpDown = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker1.TabIndex = 94;
+            this.shiftStart1.CustomFormat = "H:mm";
+            this.shiftStart1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftStart1.Location = new System.Drawing.Point(358, 75);
+            this.shiftStart1.Name = "shiftStart1";
+            this.shiftStart1.ShowUpDown = true;
+            this.shiftStart1.Size = new System.Drawing.Size(200, 41);
+            this.shiftStart1.TabIndex = 94;
             // 
-            // dateTimePicker2
+            // shiftStart2
             // 
-            this.dateTimePicker2.CustomFormat = "H:mm";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(358, 136);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.ShowUpDown = true;
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker2.TabIndex = 95;
+            this.shiftStart2.CustomFormat = "H:mm";
+            this.shiftStart2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftStart2.Location = new System.Drawing.Point(358, 136);
+            this.shiftStart2.Name = "shiftStart2";
+            this.shiftStart2.ShowUpDown = true;
+            this.shiftStart2.Size = new System.Drawing.Size(200, 41);
+            this.shiftStart2.TabIndex = 95;
             // 
-            // dateTimePicker3
+            // shiftStart3
             // 
-            this.dateTimePicker3.CustomFormat = "H:mm";
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(358, 183);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.ShowUpDown = true;
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker3.TabIndex = 96;
+            this.shiftStart3.CustomFormat = "H:mm";
+            this.shiftStart3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftStart3.Location = new System.Drawing.Point(358, 183);
+            this.shiftStart3.Name = "shiftStart3";
+            this.shiftStart3.ShowUpDown = true;
+            this.shiftStart3.Size = new System.Drawing.Size(200, 41);
+            this.shiftStart3.TabIndex = 96;
             // 
-            // dateTimePicker4
+            // shiftStart4
             // 
-            this.dateTimePicker4.CustomFormat = "H:mm";
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker4.Location = new System.Drawing.Point(358, 230);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.ShowUpDown = true;
-            this.dateTimePicker4.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker4.TabIndex = 97;
+            this.shiftStart4.CustomFormat = "H:mm";
+            this.shiftStart4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftStart4.Location = new System.Drawing.Point(358, 230);
+            this.shiftStart4.Name = "shiftStart4";
+            this.shiftStart4.ShowUpDown = true;
+            this.shiftStart4.Size = new System.Drawing.Size(200, 41);
+            this.shiftStart4.TabIndex = 97;
             // 
-            // dateTimePicker5
+            // shiftStart5
             // 
-            this.dateTimePicker5.CustomFormat = "H:mm";
-            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker5.Location = new System.Drawing.Point(358, 277);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.ShowUpDown = true;
-            this.dateTimePicker5.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker5.TabIndex = 98;
+            this.shiftStart5.CustomFormat = "H:mm";
+            this.shiftStart5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftStart5.Location = new System.Drawing.Point(358, 277);
+            this.shiftStart5.Name = "shiftStart5";
+            this.shiftStart5.ShowUpDown = true;
+            this.shiftStart5.Size = new System.Drawing.Size(200, 41);
+            this.shiftStart5.TabIndex = 98;
             // 
-            // dateTimePicker6
+            // shiftStart6
             // 
-            this.dateTimePicker6.CustomFormat = "H:mm";
-            this.dateTimePicker6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker6.Location = new System.Drawing.Point(358, 324);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.ShowUpDown = true;
-            this.dateTimePicker6.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker6.TabIndex = 99;
+            this.shiftStart6.CustomFormat = "H:mm";
+            this.shiftStart6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftStart6.Location = new System.Drawing.Point(358, 324);
+            this.shiftStart6.Name = "shiftStart6";
+            this.shiftStart6.ShowUpDown = true;
+            this.shiftStart6.Size = new System.Drawing.Size(200, 41);
+            this.shiftStart6.TabIndex = 99;
             // 
-            // dateTimePicker7
+            // shiftStart7
             // 
-            this.dateTimePicker7.CustomFormat = "H:mm";
-            this.dateTimePicker7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker7.Location = new System.Drawing.Point(358, 371);
-            this.dateTimePicker7.Name = "dateTimePicker7";
-            this.dateTimePicker7.ShowUpDown = true;
-            this.dateTimePicker7.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker7.TabIndex = 100;
+            this.shiftStart7.CustomFormat = "H:mm";
+            this.shiftStart7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftStart7.Location = new System.Drawing.Point(358, 371);
+            this.shiftStart7.Name = "shiftStart7";
+            this.shiftStart7.ShowUpDown = true;
+            this.shiftStart7.Size = new System.Drawing.Size(200, 41);
+            this.shiftStart7.TabIndex = 100;
             // 
-            // dateTimePicker8
+            // shiftStart8
             // 
-            this.dateTimePicker8.CustomFormat = "H:mm";
-            this.dateTimePicker8.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker8.Location = new System.Drawing.Point(358, 418);
-            this.dateTimePicker8.Name = "dateTimePicker8";
-            this.dateTimePicker8.ShowUpDown = true;
-            this.dateTimePicker8.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker8.TabIndex = 101;
+            this.shiftStart8.CustomFormat = "H:mm";
+            this.shiftStart8.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftStart8.Location = new System.Drawing.Point(358, 418);
+            this.shiftStart8.Name = "shiftStart8";
+            this.shiftStart8.ShowUpDown = true;
+            this.shiftStart8.Size = new System.Drawing.Size(200, 41);
+            this.shiftStart8.TabIndex = 101;
             // 
-            // dateTimePicker9
+            // shiftStart9
             // 
-            this.dateTimePicker9.CustomFormat = "H:mm";
-            this.dateTimePicker9.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker9.Location = new System.Drawing.Point(358, 465);
-            this.dateTimePicker9.Name = "dateTimePicker9";
-            this.dateTimePicker9.ShowUpDown = true;
-            this.dateTimePicker9.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker9.TabIndex = 102;
+            this.shiftStart9.CustomFormat = "H:mm";
+            this.shiftStart9.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftStart9.Location = new System.Drawing.Point(358, 465);
+            this.shiftStart9.Name = "shiftStart9";
+            this.shiftStart9.ShowUpDown = true;
+            this.shiftStart9.Size = new System.Drawing.Size(200, 41);
+            this.shiftStart9.TabIndex = 102;
             // 
-            // dateTimePicker10
+            // shiftEnd1
             // 
-            this.dateTimePicker10.CustomFormat = "H:mm";
-            this.dateTimePicker10.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker10.Location = new System.Drawing.Point(564, 75);
-            this.dateTimePicker10.Name = "dateTimePicker10";
-            this.dateTimePicker10.ShowUpDown = true;
-            this.dateTimePicker10.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker10.TabIndex = 103;
+            this.shiftEnd1.CustomFormat = "H:mm";
+            this.shiftEnd1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftEnd1.Location = new System.Drawing.Point(564, 75);
+            this.shiftEnd1.Name = "shiftEnd1";
+            this.shiftEnd1.ShowUpDown = true;
+            this.shiftEnd1.Size = new System.Drawing.Size(200, 41);
+            this.shiftEnd1.TabIndex = 103;
             // 
-            // dateTimePicker11
+            // shiftEnd2
             // 
-            this.dateTimePicker11.CustomFormat = "H:mm";
-            this.dateTimePicker11.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker11.Location = new System.Drawing.Point(564, 136);
-            this.dateTimePicker11.Name = "dateTimePicker11";
-            this.dateTimePicker11.ShowUpDown = true;
-            this.dateTimePicker11.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker11.TabIndex = 104;
+            this.shiftEnd2.CustomFormat = "H:mm";
+            this.shiftEnd2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftEnd2.Location = new System.Drawing.Point(564, 136);
+            this.shiftEnd2.Name = "shiftEnd2";
+            this.shiftEnd2.ShowUpDown = true;
+            this.shiftEnd2.Size = new System.Drawing.Size(200, 41);
+            this.shiftEnd2.TabIndex = 104;
             // 
-            // dateTimePicker12
+            // shiftEnd3
             // 
-            this.dateTimePicker12.CustomFormat = "H:mm";
-            this.dateTimePicker12.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker12.Location = new System.Drawing.Point(564, 183);
-            this.dateTimePicker12.Name = "dateTimePicker12";
-            this.dateTimePicker12.ShowUpDown = true;
-            this.dateTimePicker12.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker12.TabIndex = 105;
+            this.shiftEnd3.CustomFormat = "H:mm";
+            this.shiftEnd3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftEnd3.Location = new System.Drawing.Point(564, 183);
+            this.shiftEnd3.Name = "shiftEnd3";
+            this.shiftEnd3.ShowUpDown = true;
+            this.shiftEnd3.Size = new System.Drawing.Size(200, 41);
+            this.shiftEnd3.TabIndex = 105;
             // 
-            // dateTimePicker13
+            // shiftEnd4
             // 
-            this.dateTimePicker13.CustomFormat = "H:mm";
-            this.dateTimePicker13.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker13.Location = new System.Drawing.Point(564, 230);
-            this.dateTimePicker13.Name = "dateTimePicker13";
-            this.dateTimePicker13.ShowUpDown = true;
-            this.dateTimePicker13.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker13.TabIndex = 106;
+            this.shiftEnd4.CustomFormat = "H:mm";
+            this.shiftEnd4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftEnd4.Location = new System.Drawing.Point(564, 230);
+            this.shiftEnd4.Name = "shiftEnd4";
+            this.shiftEnd4.ShowUpDown = true;
+            this.shiftEnd4.Size = new System.Drawing.Size(200, 41);
+            this.shiftEnd4.TabIndex = 106;
             // 
-            // dateTimePicker14
+            // shiftEnd5
             // 
-            this.dateTimePicker14.CustomFormat = "H:mm";
-            this.dateTimePicker14.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker14.Location = new System.Drawing.Point(564, 277);
-            this.dateTimePicker14.Name = "dateTimePicker14";
-            this.dateTimePicker14.ShowUpDown = true;
-            this.dateTimePicker14.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker14.TabIndex = 107;
+            this.shiftEnd5.CustomFormat = "H:mm";
+            this.shiftEnd5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftEnd5.Location = new System.Drawing.Point(564, 277);
+            this.shiftEnd5.Name = "shiftEnd5";
+            this.shiftEnd5.ShowUpDown = true;
+            this.shiftEnd5.Size = new System.Drawing.Size(200, 41);
+            this.shiftEnd5.TabIndex = 107;
             // 
-            // dateTimePicker15
+            // shiftEnd6
             // 
-            this.dateTimePicker15.CustomFormat = "H:mm";
-            this.dateTimePicker15.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker15.Location = new System.Drawing.Point(564, 324);
-            this.dateTimePicker15.Name = "dateTimePicker15";
-            this.dateTimePicker15.ShowUpDown = true;
-            this.dateTimePicker15.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker15.TabIndex = 108;
+            this.shiftEnd6.CustomFormat = "H:mm";
+            this.shiftEnd6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftEnd6.Location = new System.Drawing.Point(564, 324);
+            this.shiftEnd6.Name = "shiftEnd6";
+            this.shiftEnd6.ShowUpDown = true;
+            this.shiftEnd6.Size = new System.Drawing.Size(200, 41);
+            this.shiftEnd6.TabIndex = 108;
             // 
-            // dateTimePicker16
+            // shiftEnd7
             // 
-            this.dateTimePicker16.CustomFormat = "H:mm";
-            this.dateTimePicker16.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker16.Location = new System.Drawing.Point(564, 371);
-            this.dateTimePicker16.Name = "dateTimePicker16";
-            this.dateTimePicker16.ShowUpDown = true;
-            this.dateTimePicker16.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker16.TabIndex = 109;
+            this.shiftEnd7.CustomFormat = "H:mm";
+            this.shiftEnd7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftEnd7.Location = new System.Drawing.Point(564, 371);
+            this.shiftEnd7.Name = "shiftEnd7";
+            this.shiftEnd7.ShowUpDown = true;
+            this.shiftEnd7.Size = new System.Drawing.Size(200, 41);
+            this.shiftEnd7.TabIndex = 109;
             // 
-            // dateTimePicker17
+            // shiftEnd8
             // 
-            this.dateTimePicker17.CustomFormat = "H:mm";
-            this.dateTimePicker17.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker17.Location = new System.Drawing.Point(564, 418);
-            this.dateTimePicker17.Name = "dateTimePicker17";
-            this.dateTimePicker17.ShowUpDown = true;
-            this.dateTimePicker17.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker17.TabIndex = 110;
+            this.shiftEnd8.CustomFormat = "H:mm";
+            this.shiftEnd8.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftEnd8.Location = new System.Drawing.Point(564, 418);
+            this.shiftEnd8.Name = "shiftEnd8";
+            this.shiftEnd8.ShowUpDown = true;
+            this.shiftEnd8.Size = new System.Drawing.Size(200, 41);
+            this.shiftEnd8.TabIndex = 110;
             // 
-            // dateTimePicker18
+            // shiftEnd9
             // 
-            this.dateTimePicker18.CustomFormat = "H:mm";
-            this.dateTimePicker18.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker18.Location = new System.Drawing.Point(564, 465);
-            this.dateTimePicker18.Name = "dateTimePicker18";
-            this.dateTimePicker18.ShowUpDown = true;
-            this.dateTimePicker18.Size = new System.Drawing.Size(200, 41);
-            this.dateTimePicker18.TabIndex = 111;
+            this.shiftEnd9.CustomFormat = "H:mm";
+            this.shiftEnd9.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.shiftEnd9.Location = new System.Drawing.Point(564, 465);
+            this.shiftEnd9.Name = "shiftEnd9";
+            this.shiftEnd9.ShowUpDown = true;
+            this.shiftEnd9.Size = new System.Drawing.Size(200, 41);
+            this.shiftEnd9.TabIndex = 111;
+            // 
+            // lblShiftSpan1
+            // 
+            this.lblShiftSpan1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblShiftSpan1.AutoSize = true;
+            this.lblShiftSpan1.Location = new System.Drawing.Point(770, 84);
+            this.lblShiftSpan1.Name = "lblShiftSpan1";
+            this.lblShiftSpan1.Size = new System.Drawing.Size(149, 36);
+            this.lblShiftSpan1.TabIndex = 112;
+            this.lblShiftSpan1.Text = "0";
+            this.lblShiftSpan1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblShiftSpan2
+            // 
+            this.lblShiftSpan2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblShiftSpan2.AutoSize = true;
+            this.lblShiftSpan2.Location = new System.Drawing.Point(770, 138);
+            this.lblShiftSpan2.Name = "lblShiftSpan2";
+            this.lblShiftSpan2.Size = new System.Drawing.Size(149, 36);
+            this.lblShiftSpan2.TabIndex = 113;
+            this.lblShiftSpan2.Text = "0";
+            this.lblShiftSpan2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblShiftSpan3
+            // 
+            this.lblShiftSpan3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblShiftSpan3.AutoSize = true;
+            this.lblShiftSpan3.Location = new System.Drawing.Point(770, 185);
+            this.lblShiftSpan3.Name = "lblShiftSpan3";
+            this.lblShiftSpan3.Size = new System.Drawing.Size(149, 36);
+            this.lblShiftSpan3.TabIndex = 114;
+            this.lblShiftSpan3.Text = "0";
+            this.lblShiftSpan3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblShiftSpan4
+            // 
+            this.lblShiftSpan4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblShiftSpan4.AutoSize = true;
+            this.lblShiftSpan4.Location = new System.Drawing.Point(770, 232);
+            this.lblShiftSpan4.Name = "lblShiftSpan4";
+            this.lblShiftSpan4.Size = new System.Drawing.Size(149, 36);
+            this.lblShiftSpan4.TabIndex = 115;
+            this.lblShiftSpan4.Text = "0";
+            this.lblShiftSpan4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblShiftSpan5
+            // 
+            this.lblShiftSpan5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblShiftSpan5.AutoSize = true;
+            this.lblShiftSpan5.Location = new System.Drawing.Point(770, 279);
+            this.lblShiftSpan5.Name = "lblShiftSpan5";
+            this.lblShiftSpan5.Size = new System.Drawing.Size(149, 36);
+            this.lblShiftSpan5.TabIndex = 116;
+            this.lblShiftSpan5.Text = "0";
+            this.lblShiftSpan5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblShiftSpan6
+            // 
+            this.lblShiftSpan6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblShiftSpan6.AutoSize = true;
+            this.lblShiftSpan6.Location = new System.Drawing.Point(770, 326);
+            this.lblShiftSpan6.Name = "lblShiftSpan6";
+            this.lblShiftSpan6.Size = new System.Drawing.Size(149, 36);
+            this.lblShiftSpan6.TabIndex = 117;
+            this.lblShiftSpan6.Text = "0";
+            this.lblShiftSpan6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblShiftSpan7
+            // 
+            this.lblShiftSpan7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblShiftSpan7.AutoSize = true;
+            this.lblShiftSpan7.Location = new System.Drawing.Point(770, 373);
+            this.lblShiftSpan7.Name = "lblShiftSpan7";
+            this.lblShiftSpan7.Size = new System.Drawing.Size(149, 36);
+            this.lblShiftSpan7.TabIndex = 118;
+            this.lblShiftSpan7.Text = "0";
+            this.lblShiftSpan7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblShiftSpan8
+            // 
+            this.lblShiftSpan8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblShiftSpan8.AutoSize = true;
+            this.lblShiftSpan8.Location = new System.Drawing.Point(770, 420);
+            this.lblShiftSpan8.Name = "lblShiftSpan8";
+            this.lblShiftSpan8.Size = new System.Drawing.Size(149, 36);
+            this.lblShiftSpan8.TabIndex = 119;
+            this.lblShiftSpan8.Text = "0";
+            this.lblShiftSpan8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblShiftSpan9
+            // 
+            this.lblShiftSpan9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblShiftSpan9.AutoSize = true;
+            this.lblShiftSpan9.Location = new System.Drawing.Point(770, 467);
+            this.lblShiftSpan9.Name = "lblShiftSpan9";
+            this.lblShiftSpan9.Size = new System.Drawing.Size(149, 36);
+            this.lblShiftSpan9.TabIndex = 120;
+            this.lblShiftSpan9.Text = "0";
+            this.lblShiftSpan9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dayTarget6
+            // 
+            this.dayTarget6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dayTarget6.Location = new System.Drawing.Point(925, 324);
+            this.dayTarget6.Name = "dayTarget6";
+            this.dayTarget6.Size = new System.Drawing.Size(160, 41);
+            this.dayTarget6.TabIndex = 95;
+            // 
+            // dayTarget3
+            // 
+            this.dayTarget3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dayTarget3.Location = new System.Drawing.Point(925, 183);
+            this.dayTarget3.Name = "dayTarget3";
+            this.dayTarget3.Size = new System.Drawing.Size(160, 41);
+            this.dayTarget3.TabIndex = 96;
+            // 
+            // dayTarget8
+            // 
+            this.dayTarget8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dayTarget8.Location = new System.Drawing.Point(925, 418);
+            this.dayTarget8.Name = "dayTarget8";
+            this.dayTarget8.Size = new System.Drawing.Size(160, 41);
+            this.dayTarget8.TabIndex = 97;
+            // 
+            // dayTarget5
+            // 
+            this.dayTarget5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dayTarget5.Location = new System.Drawing.Point(925, 277);
+            this.dayTarget5.Name = "dayTarget5";
+            this.dayTarget5.Size = new System.Drawing.Size(160, 41);
+            this.dayTarget5.TabIndex = 98;
+            // 
+            // dayTarget2
+            // 
+            this.dayTarget2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dayTarget2.Location = new System.Drawing.Point(925, 136);
+            this.dayTarget2.Name = "dayTarget2";
+            this.dayTarget2.Size = new System.Drawing.Size(160, 41);
+            this.dayTarget2.TabIndex = 99;
+            // 
+            // dayTarget1
+            // 
+            this.dayTarget1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dayTarget1.Location = new System.Drawing.Point(925, 82);
+            this.dayTarget1.Name = "dayTarget1";
+            this.dayTarget1.Size = new System.Drawing.Size(160, 41);
+            this.dayTarget1.TabIndex = 94;
+            // 
+            // dayTarget7
+            // 
+            this.dayTarget7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dayTarget7.Location = new System.Drawing.Point(925, 371);
+            this.dayTarget7.Name = "dayTarget7";
+            this.dayTarget7.Size = new System.Drawing.Size(160, 41);
+            this.dayTarget7.TabIndex = 100;
+            // 
+            // dayTarget4
+            // 
+            this.dayTarget4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dayTarget4.Location = new System.Drawing.Point(925, 230);
+            this.dayTarget4.Name = "dayTarget4";
+            this.dayTarget4.Size = new System.Drawing.Size(160, 41);
+            this.dayTarget4.TabIndex = 101;
+            // 
+            // plannedDowntime1
+            // 
+            this.plannedDowntime1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.plannedDowntime1.Location = new System.Drawing.Point(1091, 82);
+            this.plannedDowntime1.Name = "plannedDowntime1";
+            this.plannedDowntime1.Size = new System.Drawing.Size(152, 41);
+            this.plannedDowntime1.TabIndex = 122;
+            // 
+            // machineIP1
+            // 
+            this.machineIP1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineIP1.Location = new System.Drawing.Point(1249, 82);
+            this.machineIP1.Name = "machineIP1";
+            this.machineIP1.Size = new System.Drawing.Size(185, 41);
+            this.machineIP1.TabIndex = 123;
+            // 
+            // plannedDowntime2
+            // 
+            this.plannedDowntime2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.plannedDowntime2.Location = new System.Drawing.Point(1091, 136);
+            this.plannedDowntime2.Name = "plannedDowntime2";
+            this.plannedDowntime2.Size = new System.Drawing.Size(152, 41);
+            this.plannedDowntime2.TabIndex = 124;
+            // 
+            // machineIP2
+            // 
+            this.machineIP2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineIP2.Location = new System.Drawing.Point(1249, 136);
+            this.machineIP2.Name = "machineIP2";
+            this.machineIP2.Size = new System.Drawing.Size(185, 41);
+            this.machineIP2.TabIndex = 125;
+            // 
+            // plannedDowntime3
+            // 
+            this.plannedDowntime3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.plannedDowntime3.Location = new System.Drawing.Point(1091, 183);
+            this.plannedDowntime3.Name = "plannedDowntime3";
+            this.plannedDowntime3.Size = new System.Drawing.Size(152, 41);
+            this.plannedDowntime3.TabIndex = 126;
+            // 
+            // machineIP3
+            // 
+            this.machineIP3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineIP3.Location = new System.Drawing.Point(1249, 183);
+            this.machineIP3.Name = "machineIP3";
+            this.machineIP3.Size = new System.Drawing.Size(185, 41);
+            this.machineIP3.TabIndex = 121;
+            // 
+            // plannedDowntime4
+            // 
+            this.plannedDowntime4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.plannedDowntime4.Location = new System.Drawing.Point(1091, 230);
+            this.plannedDowntime4.Name = "plannedDowntime4";
+            this.plannedDowntime4.Size = new System.Drawing.Size(152, 41);
+            this.plannedDowntime4.TabIndex = 127;
+            // 
+            // machineIP4
+            // 
+            this.machineIP4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineIP4.Location = new System.Drawing.Point(1249, 230);
+            this.machineIP4.Name = "machineIP4";
+            this.machineIP4.Size = new System.Drawing.Size(185, 41);
+            this.machineIP4.TabIndex = 128;
+            // 
+            // plannedDowntime5
+            // 
+            this.plannedDowntime5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.plannedDowntime5.Location = new System.Drawing.Point(1091, 277);
+            this.plannedDowntime5.Name = "plannedDowntime5";
+            this.plannedDowntime5.Size = new System.Drawing.Size(152, 41);
+            this.plannedDowntime5.TabIndex = 129;
+            // 
+            // machineIP5
+            // 
+            this.machineIP5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineIP5.Location = new System.Drawing.Point(1249, 277);
+            this.machineIP5.Name = "machineIP5";
+            this.machineIP5.Size = new System.Drawing.Size(185, 41);
+            this.machineIP5.TabIndex = 131;
+            // 
+            // plannedDowntime6
+            // 
+            this.plannedDowntime6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.plannedDowntime6.Location = new System.Drawing.Point(1091, 324);
+            this.plannedDowntime6.Name = "plannedDowntime6";
+            this.plannedDowntime6.Size = new System.Drawing.Size(152, 41);
+            this.plannedDowntime6.TabIndex = 132;
+            // 
+            // machineIP6
+            // 
+            this.machineIP6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineIP6.Location = new System.Drawing.Point(1249, 324);
+            this.machineIP6.Name = "machineIP6";
+            this.machineIP6.Size = new System.Drawing.Size(185, 41);
+            this.machineIP6.TabIndex = 133;
+            // 
+            // plannedDowntime7
+            // 
+            this.plannedDowntime7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.plannedDowntime7.Location = new System.Drawing.Point(1091, 371);
+            this.plannedDowntime7.Name = "plannedDowntime7";
+            this.plannedDowntime7.Size = new System.Drawing.Size(152, 41);
+            this.plannedDowntime7.TabIndex = 134;
+            // 
+            // machineIP7
+            // 
+            this.machineIP7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineIP7.Location = new System.Drawing.Point(1249, 371);
+            this.machineIP7.Name = "machineIP7";
+            this.machineIP7.Size = new System.Drawing.Size(185, 41);
+            this.machineIP7.TabIndex = 135;
+            // 
+            // plannedDowntime8
+            // 
+            this.plannedDowntime8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.plannedDowntime8.Location = new System.Drawing.Point(1091, 418);
+            this.plannedDowntime8.Name = "plannedDowntime8";
+            this.plannedDowntime8.Size = new System.Drawing.Size(152, 41);
+            this.plannedDowntime8.TabIndex = 130;
+            // 
+            // machineIP8
+            // 
+            this.machineIP8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineIP8.Location = new System.Drawing.Point(1249, 418);
+            this.machineIP8.Name = "machineIP8";
+            this.machineIP8.Size = new System.Drawing.Size(185, 41);
+            this.machineIP8.TabIndex = 136;
+            // 
+            // dayTarget9
+            // 
+            this.dayTarget9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dayTarget9.Location = new System.Drawing.Point(925, 465);
+            this.dayTarget9.Name = "dayTarget9";
+            this.dayTarget9.Size = new System.Drawing.Size(160, 41);
+            this.dayTarget9.TabIndex = 137;
+            // 
+            // plannedDowntime9
+            // 
+            this.plannedDowntime9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.plannedDowntime9.Location = new System.Drawing.Point(1091, 465);
+            this.plannedDowntime9.Name = "plannedDowntime9";
+            this.plannedDowntime9.Size = new System.Drawing.Size(152, 41);
+            this.plannedDowntime9.TabIndex = 138;
+            // 
+            // machineIP9
+            // 
+            this.machineIP9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.machineIP9.Location = new System.Drawing.Point(1249, 465);
+            this.machineIP9.Name = "machineIP9";
+            this.machineIP9.Size = new System.Drawing.Size(185, 41);
+            this.machineIP9.TabIndex = 139;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCancel.Location = new System.Drawing.Point(12, 778);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(229, 44);
+            this.btnCancel.TabIndex = 1;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.Location = new System.Drawing.Point(1341, 778);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(229, 44);
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // machineNumeric
+            // 
+            this.machineNumeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.machineNumeric.Location = new System.Drawing.Point(268, 54);
+            this.machineNumeric.Maximum = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.machineNumeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.machineNumeric.Name = "machineNumeric";
+            this.machineNumeric.Size = new System.Drawing.Size(93, 41);
+            this.machineNumeric.TabIndex = 81;
+            this.machineNumeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label25
             // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(770, 84);
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(27, 7);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(149, 36);
-            this.label25.TabIndex = 112;
-            this.label25.Text = "0";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label25.Size = new System.Drawing.Size(740, 31);
+            this.label25.TabIndex = 83;
+            this.label25.Text = "Configure the name that will be displayed in the front screen.";
             // 
             // label26
             // 
-            this.label26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(770, 138);
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(27, 57);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(149, 36);
-            this.label26.TabIndex = 113;
-            this.label26.Text = "0";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label27
-            // 
-            this.label27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(770, 185);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(149, 36);
-            this.label27.TabIndex = 114;
-            this.label27.Text = "0";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label28
-            // 
-            this.label28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(770, 232);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(149, 36);
-            this.label28.TabIndex = 115;
-            this.label28.Text = "0";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label29
-            // 
-            this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(770, 279);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(149, 36);
-            this.label29.TabIndex = 116;
-            this.label29.Text = "0";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label30
-            // 
-            this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(770, 326);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(149, 36);
-            this.label30.TabIndex = 117;
-            this.label30.Text = "0";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label31
-            // 
-            this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(770, 373);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(149, 36);
-            this.label31.TabIndex = 118;
-            this.label31.Text = "0";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label32
-            // 
-            this.label32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(770, 420);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(149, 36);
-            this.label32.TabIndex = 119;
-            this.label32.Text = "0";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label33
-            // 
-            this.label33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(770, 467);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(149, 36);
-            this.label33.TabIndex = 120;
-            this.label33.Text = "0";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox15.Location = new System.Drawing.Point(925, 324);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(160, 41);
-            this.textBox15.TabIndex = 95;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox16.Location = new System.Drawing.Point(925, 183);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(160, 41);
-            this.textBox16.TabIndex = 96;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox17.Location = new System.Drawing.Point(925, 418);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(160, 41);
-            this.textBox17.TabIndex = 97;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox18.Location = new System.Drawing.Point(925, 277);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(160, 41);
-            this.textBox18.TabIndex = 98;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox19.Location = new System.Drawing.Point(925, 136);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(160, 41);
-            this.textBox19.TabIndex = 99;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox20.Location = new System.Drawing.Point(925, 82);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(160, 41);
-            this.textBox20.TabIndex = 94;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox21.Location = new System.Drawing.Point(925, 371);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(160, 41);
-            this.textBox21.TabIndex = 100;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox22.Location = new System.Drawing.Point(925, 230);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(160, 41);
-            this.textBox22.TabIndex = 101;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox24.Location = new System.Drawing.Point(1091, 82);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(152, 41);
-            this.textBox24.TabIndex = 122;
-            // 
-            // textBox25
-            // 
-            this.textBox25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox25.Location = new System.Drawing.Point(1249, 82);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(185, 41);
-            this.textBox25.TabIndex = 123;
-            // 
-            // textBox26
-            // 
-            this.textBox26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox26.Location = new System.Drawing.Point(1091, 136);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(152, 41);
-            this.textBox26.TabIndex = 124;
-            // 
-            // textBox27
-            // 
-            this.textBox27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox27.Location = new System.Drawing.Point(1249, 136);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(185, 41);
-            this.textBox27.TabIndex = 125;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox28.Location = new System.Drawing.Point(1091, 183);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(152, 41);
-            this.textBox28.TabIndex = 126;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox29.Location = new System.Drawing.Point(1249, 183);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(185, 41);
-            this.textBox29.TabIndex = 121;
-            // 
-            // textBox30
-            // 
-            this.textBox30.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox30.Location = new System.Drawing.Point(1091, 230);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(152, 41);
-            this.textBox30.TabIndex = 127;
-            // 
-            // textBox31
-            // 
-            this.textBox31.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox31.Location = new System.Drawing.Point(1249, 230);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(185, 41);
-            this.textBox31.TabIndex = 128;
-            // 
-            // textBox32
-            // 
-            this.textBox32.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox32.Location = new System.Drawing.Point(1091, 277);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(152, 41);
-            this.textBox32.TabIndex = 129;
-            // 
-            // textBox33
-            // 
-            this.textBox33.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox33.Location = new System.Drawing.Point(1249, 277);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(185, 41);
-            this.textBox33.TabIndex = 131;
-            // 
-            // textBox34
-            // 
-            this.textBox34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox34.Location = new System.Drawing.Point(1091, 324);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(152, 41);
-            this.textBox34.TabIndex = 132;
-            // 
-            // textBox35
-            // 
-            this.textBox35.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox35.Location = new System.Drawing.Point(1249, 324);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(185, 41);
-            this.textBox35.TabIndex = 133;
-            // 
-            // textBox36
-            // 
-            this.textBox36.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox36.Location = new System.Drawing.Point(1091, 371);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(152, 41);
-            this.textBox36.TabIndex = 134;
-            // 
-            // textBox37
-            // 
-            this.textBox37.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox37.Location = new System.Drawing.Point(1249, 371);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(185, 41);
-            this.textBox37.TabIndex = 135;
-            // 
-            // textBox38
-            // 
-            this.textBox38.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox38.Location = new System.Drawing.Point(1091, 418);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(152, 41);
-            this.textBox38.TabIndex = 130;
-            // 
-            // textBox39
-            // 
-            this.textBox39.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox39.Location = new System.Drawing.Point(1249, 418);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(185, 41);
-            this.textBox39.TabIndex = 136;
-            // 
-            // textBox40
-            // 
-            this.textBox40.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox40.Location = new System.Drawing.Point(925, 465);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(160, 41);
-            this.textBox40.TabIndex = 137;
-            // 
-            // textBox41
-            // 
-            this.textBox41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox41.Location = new System.Drawing.Point(1091, 465);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(152, 41);
-            this.textBox41.TabIndex = 138;
-            // 
-            // textBox42
-            // 
-            this.textBox42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox42.Location = new System.Drawing.Point(1249, 465);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(185, 41);
-            this.textBox42.TabIndex = 139;
+            this.label26.Size = new System.Drawing.Size(235, 29);
+            this.label26.TabIndex = 82;
+            this.label26.Text = "Number of machines";
             // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1582, 753);
+            this.BackColor = System.Drawing.Color.SlateGray;
+            this.ClientSize = new System.Drawing.Size(1582, 900);
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
+            this.Load += new System.EventHandler(this.Settings_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlMain.ResumeLayout(false);
             this.hermesTabs1.ResumeLayout(false);
@@ -1383,6 +1461,7 @@
             this.tableLayoutPanel1.PerformLayout();
             this.tabBackup.ResumeLayout(false);
             this.tabSchedule.ResumeLayout(false);
+            this.tabSchedule.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1394,6 +1473,7 @@
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.machineNumeric)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1402,24 +1482,24 @@
 
         private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.Panel pnlMain;
-        private HermesTabs.HermesTabs hermesTabs1;
+        private HermesToolBox.HermesTabs hermesTabs1;
         private System.Windows.Forms.TabPage tabMain;
         private System.Windows.Forms.TabPage tabBackup;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.TabPage tabSchedule;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox readingFreq;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ipAddress;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox greenLimit;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox yellowLimit;
+        private System.Windows.Forms.TextBox redLimit;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
@@ -1431,33 +1511,33 @@
         private System.Windows.Forms.TextBox backupFreq;
         private System.Windows.Forms.Button btnExamine;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox machineIP9;
+        private System.Windows.Forms.TextBox machineIP5;
+        private System.Windows.Forms.TextBox plannedDowntime6;
+        private System.Windows.Forms.TextBox machineIP6;
+        private System.Windows.Forms.TextBox plannedDowntime7;
+        private System.Windows.Forms.TextBox machineIP7;
+        private System.Windows.Forms.TextBox plannedDowntime8;
+        private System.Windows.Forms.TextBox machineIP8;
+        private System.Windows.Forms.TextBox dayTarget9;
+        private System.Windows.Forms.TextBox plannedDowntime9;
+        private System.Windows.Forms.TextBox plannedDowntime1;
+        private System.Windows.Forms.TextBox machineIP1;
+        private System.Windows.Forms.TextBox plannedDowntime2;
+        private System.Windows.Forms.TextBox machineIP2;
+        private System.Windows.Forms.TextBox plannedDowntime3;
+        private System.Windows.Forms.TextBox machineIP3;
+        private System.Windows.Forms.TextBox plannedDowntime4;
+        private System.Windows.Forms.TextBox machineIP4;
+        private System.Windows.Forms.TextBox plannedDowntime5;
+        private System.Windows.Forms.TextBox machineName9;
+        private System.Windows.Forms.TextBox dayTarget3;
+        private System.Windows.Forms.TextBox machineName8;
+        private System.Windows.Forms.TextBox machineName7;
+        private System.Windows.Forms.TextBox machineName5;
+        private System.Windows.Forms.TextBox dayTarget2;
+        private System.Windows.Forms.TextBox machineName2;
+        private System.Windows.Forms.TextBox dayTarget1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
@@ -1474,41 +1554,46 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker10;
-        private System.Windows.Forms.DateTimePicker dateTimePicker11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker12;
-        private System.Windows.Forms.DateTimePicker dateTimePicker13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker14;
-        private System.Windows.Forms.DateTimePicker dateTimePicker15;
-        private System.Windows.Forms.DateTimePicker dateTimePicker16;
-        private System.Windows.Forms.DateTimePicker dateTimePicker17;
-        private System.Windows.Forms.DateTimePicker dateTimePicker18;
+        private System.Windows.Forms.TextBox machineName1;
+        private System.Windows.Forms.TextBox machineName3;
+        private System.Windows.Forms.TextBox machineName4;
+        private System.Windows.Forms.TextBox machineName6;
+        private System.Windows.Forms.DateTimePicker shiftStart1;
+        private System.Windows.Forms.DateTimePicker shiftStart2;
+        private System.Windows.Forms.DateTimePicker shiftStart3;
+        private System.Windows.Forms.DateTimePicker shiftStart4;
+        private System.Windows.Forms.DateTimePicker shiftStart5;
+        private System.Windows.Forms.DateTimePicker shiftStart6;
+        private System.Windows.Forms.DateTimePicker shiftStart7;
+        private System.Windows.Forms.DateTimePicker shiftStart8;
+        private System.Windows.Forms.DateTimePicker shiftStart9;
+        private System.Windows.Forms.DateTimePicker shiftEnd1;
+        private System.Windows.Forms.DateTimePicker shiftEnd2;
+        private System.Windows.Forms.DateTimePicker shiftEnd3;
+        private System.Windows.Forms.DateTimePicker shiftEnd4;
+        private System.Windows.Forms.DateTimePicker shiftEnd5;
+        private System.Windows.Forms.DateTimePicker shiftEnd6;
+        private System.Windows.Forms.DateTimePicker shiftEnd7;
+        private System.Windows.Forms.DateTimePicker shiftEnd8;
+        private System.Windows.Forms.DateTimePicker shiftEnd9;
+        private System.Windows.Forms.Label lblShiftSpan1;
+        private System.Windows.Forms.Label lblShiftSpan2;
+        private System.Windows.Forms.Label lblShiftSpan3;
+        private System.Windows.Forms.Label lblShiftSpan4;
+        private System.Windows.Forms.Label lblShiftSpan5;
+        private System.Windows.Forms.Label lblShiftSpan6;
+        private System.Windows.Forms.Label lblShiftSpan7;
+        private System.Windows.Forms.Label lblShiftSpan8;
+        private System.Windows.Forms.Label lblShiftSpan9;
+        private System.Windows.Forms.TextBox dayTarget4;
+        private System.Windows.Forms.TextBox dayTarget5;
+        private System.Windows.Forms.TextBox dayTarget6;
+        private System.Windows.Forms.TextBox dayTarget7;
+        private System.Windows.Forms.TextBox dayTarget8;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.NumericUpDown machineNumeric;
     }
 }
